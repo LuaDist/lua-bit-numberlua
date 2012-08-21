@@ -1,12 +1,13 @@
-# Copyright (C) 2011 LuaDist.
+# Copyright (C) 2012 LuaDist.
 # Created by Peter Kapec
 # Redistribution and use of this file is allowed according to the terms of the MIT license.
 # For details see the COPYRIGHT file distributed with LuaDist.
 # Please note that the package source code is licensed under its own license.
 
-project ( lua-bit-numberlua NONE)
-cmake_minimum_required ( VERSION 2.6 )
-include ( dist.cmake )
+project ( lua-bit-numberlua NONE )
+cmake_minimum_required ( VERSION 2.8 )
+include ( cmake/dist.cmake )
+include ( lua )
 
-INSTALL(DIRECTORY module/lmod/bit DESTINATION ${INSTALL_LMOD})
-INSTALL(FILES COPYRIGHT DESTINATION ${INSTALL_DATA})
+install_lua_module ( bit.numberlua module/lmod/bit/numberlua.lua )
+install_data ( COPYRIGHT )

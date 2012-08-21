@@ -4,7 +4,6 @@ version = "0.1.0"
 
 desc = "'bit.numberlua' Bitwise operators in pure Lua using Lua numbers"
 author = "David Manura"
-
 maintainer = "Peter Kapec"
 homepage = "http://lua-users.org/wiki/ModuleBitNumberLua"
 license = "MIT"
