@@ -1,0 +1,21 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "David Manura"
+depends = {
+[[lua ~> 5.1]],
+}
+
+desc = "'bit.numberlua' Bitwise operators in pure Lua using Lua numbers"
+version = "0.1.0"
+homepage = "http://lua-users.org/wiki/ModuleBitNumberLua"
+files = {
+Unspecified = {
+[[lib/lua/bit/numberlua.lua]],
+[[share/lua-bit-numberlua/COPYRIGHT]],
+}
+,
+}
+
+license = "MIT"
+name = "lua-bit-numberlua"
+maintainer = "Peter Kapec"
